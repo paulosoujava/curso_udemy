@@ -1,3 +1,5 @@
 flutter_api_rest/android
 flutter_api_rest/ios
 .DS_Store
+flutter_socket_io_app/android
+flutter_socket_io_app/ios
