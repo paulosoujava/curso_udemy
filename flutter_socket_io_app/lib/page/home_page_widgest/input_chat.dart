@@ -40,7 +40,7 @@ class _InputChatState extends State<InputChat> {
               padding: EdgeInsets.symmetric(
                 horizontal: 20,
               ),
-              placeholder: "Your message here ...",
+              placeholder: "digite aqui ...",
               placeholderStyle: GoogleFonts.quicksand(
                 color: Color(0xff546e7a),
               ),

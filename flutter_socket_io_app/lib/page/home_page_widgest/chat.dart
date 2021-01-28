@@ -96,7 +96,7 @@ class _ChatState extends State<Chat> {
                       return Text(
                         "$typingUser is typing",
                         style: TextStyle(
-                          color: Colors.black26,
+                          color: Colors.white,
                         ),
                       );
                     }
@@ -122,6 +122,7 @@ class _ChatState extends State<Chat> {
                     backgroundColor: Colors.white,
                     child: Text(
                       counter.toString(),
+                      style: TextStyle(color: Colors.black),
                     ),
                   ),
                 );

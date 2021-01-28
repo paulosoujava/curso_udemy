@@ -27,15 +27,12 @@ class _NicknameFormState extends State<NicknameForm> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              "What's your nickname?",
-              style: TextStyle(
-                fontWeight: FontWeight.bold,
-                fontSize: 20,
-              ),
+              "Seu nome é?",
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
             ),
             SizedBox(height: 20),
             CupertinoTextField(
-              placeholder: "insert your nickname",
+              placeholder: "seu nome",
               onChanged: (text) {
                 this._nickname = text;
               },
@@ -43,13 +40,10 @@ class _NicknameFormState extends State<NicknameForm> {
                 color: Color(0xff455a64),
                 borderRadius: BorderRadius.circular(5),
               ),
-              style: GoogleFonts.quicksand(
-                fontWeight: FontWeight.w300,
-                color: Colors.white,
-              ),
+              style: GoogleFonts.quicksand(fontWeight: FontWeight.w300, color: Colors.white, fontSize: 40),
               textAlign: TextAlign.center,
             ),
-            SizedBox(height: 10),
+            SizedBox(height: 30),
             CupertinoButton(
               color: accentColor,
               borderRadius: BorderRadius.circular(30),
