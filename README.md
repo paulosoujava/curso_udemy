@@ -1,17 +1,21 @@
 # curso_udemy
 
+
+GOOGLE MAPS
+_____
+<img src="https://github.com/paulosoujava/curso_udemy/blob/main/images/Screen%20Shot%202021-01-29%20at%2013.05.43.png" width="148">
+
 API REST
 _____
-[![N|Solid](https://github.com/paulosoujava/curso_udemy/blob/main/images/Screen%20Shot%202021-01-29%20at%2013.14.33.png)](https://www.linkedin.com/in/paulo-oliveira-nodejs/?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAC8GnmkBA9I35YVbJhaGDsJLoS2OJow4aTQ)
+<img src="https://github.com/paulosoujava/curso_udemy/blob/main/images/Screen%20Shot%202021-01-29%20at%2013.14.33.png" width="148">
+
 
 
 
 CHAT SOCKET IO
 _____
-[![N|Solid](https://github.com/paulosoujava/curso_udemy/blob/main/images/Screen%20Shot%202021-01-29%20at%2013.05.43.png)](https://www.linkedin.com/in/paulo-oliveira-nodejs/?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAC8GnmkBA9I35YVbJhaGDsJLoS2OJow4aTQ)
+<img src="https://github.com/paulosoujava/curso_udemy/blob/main/images/Screen%20Shot%202021-01-29%20at%2013.15.49.png" width="148">
 
 
 
-GOOGLE MAPS
-_____
-[![N|Solid](https://github.com/paulosoujava/curso_udemy/blob/main/images/Screen%20Shot%202021-01-29%20at%2013.15.49.png)](https://www.linkedin.com/in/paulo-oliveira-nodejs/?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAC8GnmkBA9I35YVbJhaGDsJLoS2OJow4aTQ)
+
