@@ -3,3 +3,5 @@ flutter_api_rest/ios
 .DS_Store
 flutter_socket_io_app/android
 flutter_socket_io_app/ios
+google_maps/android
+google_maps/ios
