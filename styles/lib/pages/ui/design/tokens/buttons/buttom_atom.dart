@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../core/behaviour.dart';
+import '../../../ui.dart';
 
 class ButtomAtom extends StatelessWidget {
   final Behaviour behaviour;

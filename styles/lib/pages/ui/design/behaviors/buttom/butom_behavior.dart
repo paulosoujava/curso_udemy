@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../core/behaviour.dart';
-import '../../core/component.dart';
-import '../../tokens/buttons/buttom_atom.dart';
+import '../../../ui.dart';
 
 class ButtomBehavior extends StatelessWidget with Component {
   final Behaviour behaviour;

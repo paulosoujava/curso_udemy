@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:styles/behaviors/butom_behavior.dart';
-import 'package:styles/core/behaviour.dart';
-import 'package:styles/pages/wdgets/flat_button_expanded_widget.dart';
-import 'package:styles/pages/wdgets/input_text_widget.dart';
+import './ui/ui.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key key}) : super(key: key);

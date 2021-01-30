@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'behaviour.dart';
+import './core.dart';
 
 abstract class IComponent {
   Widget render(BuildContext context, Behaviour behaviour);
