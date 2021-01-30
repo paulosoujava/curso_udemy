@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:styles/behaviors/butom_behavior.dart';
+import 'package:styles/core/behaviour.dart';
 import 'package:styles/pages/wdgets/flat_button_expanded_widget.dart';
 import 'package:styles/pages/wdgets/input_text_widget.dart';
 
@@ -36,47 +38,55 @@ class HomePage extends StatelessWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          "Bem vindo!",
-                          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 26),
-                        ),
-                        SizedBox(
-                          height: 16,
-                        ),
-                        Text("Style Components"),
-                        SizedBox(
-                          height: 40,
-                        ),
-                        InputTextWidget(
-                          label: "EMAIL",
-                        ),
-                        SizedBox(
-                          height: 16,
-                        ),
-                        InputTextWidget(label: "PASSWORD"),
-                        SizedBox(
-                          height: 16,
-                        ),
-                        FlatButtonExpandedWidget(
-                          label: "ENTRAR",
-                          onTap: () {},
-                        ),
-                        SizedBox(
-                          height: 16,
-                        ),
-                        FlatButtonExpandedWidget(
-                          type: FlatButtonExpandedType.none,
-                          label: "Esqueci minha senha",
-                          onTap: () {},
-                        ),
-                        SizedBox(
-                          height: 16,
-                        ),
-                        FlatButtonExpandedWidget(
-                          type: FlatButtonExpandedType.outline,
-                          label: "CRIAR UMA CONTA",
-                          onTap: () {},
-                        )
+                        ButtomBehavior(
+                            behaviour: Behaviour.regular,
+                            onPress: () {
+                              print("OIIiiii");
+                            }),
+                        ButtomBehavior(behaviour: Behaviour.regular),
+                        ButtomBehavior(behaviour: Behaviour.disabled),
+                        ButtomBehavior(behaviour: Behaviour.loading),
+                        // Text(
+                        //   "Bem vindo!",
+                        //   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 26),
+                        // ),
+                        // SizedBox(
+                        //   height: 16,
+                        // ),
+                        // Text("Style Components"),
+                        // SizedBox(
+                        //   height: 40,
+                        // ),
+                        // InputTextWidget(
+                        //   label: "EMAIL",
+                        // ),
+                        // SizedBox(
+                        //   height: 16,
+                        // ),
+                        // InputTextWidget(label: "PASSWORD"),
+                        // SizedBox(
+                        //   height: 16,
+                        // ),
+                        // FlatButtonExpandedWidget(
+                        //   label: "ENTRAR",
+                        //   onTap: () {},
+                        // ),
+                        // SizedBox(
+                        //   height: 16,
+                        // ),
+                        // FlatButtonExpandedWidget(
+                        //   type: FlatButtonExpandedType.none,
+                        //   label: "Esqueci minha senha",
+                        //   onTap: () {},
+                        // ),
+                        // SizedBox(
+                        //   height: 16,
+                        // ),
+                        // FlatButtonExpandedWidget(
+                        //   type: FlatButtonExpandedType.outline,
+                        //   label: "CRIAR UMA CONTA",
+                        //   onTap: () {},
+                        // )
                       ],
                     ),
                   ),
