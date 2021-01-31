@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:styles/pages/wdgets/flat_button_expanded_widget.dart';
+
+import '../flat_button_expanded_widget.dart';
 
 const flatButtonExpandedStyle = {
   FlatButtonExpandedType.fill: {

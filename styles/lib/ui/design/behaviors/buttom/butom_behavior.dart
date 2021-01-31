@@ -13,7 +13,7 @@ class ButtomBehavior extends StatelessWidget with Component {
 
   @override
   Widget whenDisabled(BuildContext context) {
-    return ButtomAtom(
+    return Button(
       child: Text('DISABLED'),
       onPressed: null,
       behaviour: behaviour,
@@ -25,7 +25,7 @@ class ButtomBehavior extends StatelessWidget with Component {
 
   @override
   Widget whenRegular(BuildContext context) {
-    return ButtomAtom(
+    return Button(
       child: Text("REGULAR"),
       onPressed: onPress ??
           () {
@@ -40,7 +40,7 @@ class ButtomBehavior extends StatelessWidget with Component {
 
   @override
   Widget whenLoading(BuildContext context) {
-    return ButtomAtom(
+    return Button(
       child: Container(
         child: SizedBox(
           height: 300.0,

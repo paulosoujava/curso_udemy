@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:styles/pages/wdgets/styles/flat_button_expaned_style.dart';
+
+import 'styles/flat_button_expaned_style.dart';
 
 enum FlatButtonExpandedType { fill, none, outline }
 
