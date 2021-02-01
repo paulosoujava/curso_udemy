@@ -1,12 +1,16 @@
 import 'package:flutter/material.dart';
-import './ui/ui.dart';
+import 'package:styles/ui/design/behaviors/buttom/flat_button_behavior.dart';
+import 'package:styles/ui/design/lines/line.dart';
+import 'package:styles/ui/design/spaces/space.dart';
+
+import '../ui/ui.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    final size = MediaQuery.of(context).size;
+    final size = mediaQuery(context);
     return Scaffold(
       body: Stack(
         children: [
@@ -35,55 +39,42 @@ class HomePage extends StatelessWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        ButtomBehavior(
-                            behaviour: Behaviour.regular,
-                            onPress: () {
-                              print("OIIiiii");
-                            }),
-                        ButtomBehavior(behaviour: Behaviour.regular),
-                        ButtomBehavior(behaviour: Behaviour.disabled),
-                        ButtomBehavior(behaviour: Behaviour.loading),
-                        // Text(
-                        //   "Bem vindo!",
-                        //   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 26),
-                        // ),
-                        // SizedBox(
-                        //   height: 16,
-                        // ),
-                        // Text("Style Components"),
-                        // SizedBox(
-                        //   height: 40,
-                        // ),
-                        // InputTextWidget(
-                        //   label: "EMAIL",
-                        // ),
-                        // SizedBox(
-                        //   height: 16,
-                        // ),
-                        // InputTextWidget(label: "PASSWORD"),
-                        // SizedBox(
-                        //   height: 16,
-                        // ),
-                        // FlatButtonExpandedWidget(
-                        //   label: "ENTRAR",
-                        //   onTap: () {},
-                        // ),
-                        // SizedBox(
-                        //   height: 16,
-                        // ),
-                        // FlatButtonExpandedWidget(
-                        //   type: FlatButtonExpandedType.none,
-                        //   label: "Esqueci minha senha",
-                        //   onTap: () {},
-                        // ),
-                        // SizedBox(
-                        //   height: 16,
-                        // ),
-                        // FlatButtonExpandedWidget(
-                        //   type: FlatButtonExpandedType.outline,
-                        //   label: "CRIAR UMA CONTA",
-                        //   onTap: () {},
-                        // )
+                        TextDisplay(
+                          label: 'Bem vindo',
+                          display: Display.title,
+                        ),
+                        space(),
+                        line(thickness: 3, color: AMBER),
+                        space(),
+                        InputBehavior(
+                          behaviour: Behaviour.regular,
+                          label: "Email",
+                        ),
+                        space(height: H_16),
+                        InputBehavior(
+                          behaviour: Behaviour.regular,
+                          label: "Senha",
+                        ),
+                        space(height: H_30),
+                        FlatButtonBehavior(
+                          label: 'ENTRAR',
+                          behaviour: Behaviour.regular,
+                          onTap: () {},
+                        ),
+                        space(),
+                        FlatButtonBehavior(
+                          label: 'Criar uma conta',
+                          behaviour: Behaviour.regular,
+                          backgroundColor: Colors.deepOrangeAccent,
+                          textStyle: TextStyle(color: Colors.white),
+                          onTap: () {},
+                        ),
+                        space(),
+                        FlatButtonBehavior(
+                          label: 'Esqueci minha senha',
+                          behaviour: Behaviour.empty,
+                          onTap: () {},
+                        ),
                       ],
                     ),
                   ),

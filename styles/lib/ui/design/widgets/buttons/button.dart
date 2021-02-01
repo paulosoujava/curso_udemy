@@ -2,16 +2,16 @@ import 'package:flutter/material.dart';
 
 import '../../../ui.dart';
 
-class ButtomAtom extends StatelessWidget {
+class Button extends StatelessWidget {
   final Behaviour behaviour;
   final Function onPressed;
   final Widget child;
   final Color color, colorText, colorDisabled, colorDisabledText, colorSplashColor;
   final EdgeInsetsGeometry padding;
 
-  const ButtomAtom({
+  const Button({
     Key key,
-    this.behaviour,
+    @required this.behaviour,
     this.onPressed,
     this.child,
     this.color,

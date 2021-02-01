@@ -1,0 +1,4 @@
+enum Display {
+  title,
+  subtitle,
+}

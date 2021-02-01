@@ -1,1 +1,2 @@
-export 'buttom/butom_behavior.dart';
+export 'input/input_behavior.dart';
+export 'text/text_display.dart';
