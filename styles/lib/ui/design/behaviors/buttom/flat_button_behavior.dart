@@ -62,7 +62,10 @@ class FlatButtonBehavior extends StatelessWidget with ConcretBehavior {
         child: Center(
           child: Text(
             label,
-            style: textStyle,
+            style: textStyle ??
+                TextStyle(
+                  color: WHITE,
+                ),
           ),
         ),
       ),
@@ -100,21 +103,19 @@ class FlatButtonBehavior extends StatelessWidget with ConcretBehavior {
       onTap: onTap,
       child: Container(
         width: mediaQuery(context).width,
-        height: 60,
+        height: H_60,
         decoration: BoxDecoration(
-          color: backgroundColor,
+          color: backgroundColor ?? AMBER,
           borderRadius: BorderRadius.circular(16),
-          border: border,
+          border: Border.fromBorderSide(BorderSide(
+            color: Colors.grey,
+          )),
         ),
         child: Center(
-          child: Column(
-            children: [
-              CircularProgressIndicator(),
-              Text(
-                label,
-                style: textStyle,
-              ),
-            ],
+          child: SizedBox(
+            child: CircularProgressIndicator(),
+            height: 30.0,
+            width: 30.0,
           ),
         ),
       ),
